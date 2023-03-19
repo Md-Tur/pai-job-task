@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Task</title>
+    <!-- Tailwind linked -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <section class="bg-[#212529]">
+
+        <div class="flex justify-center">
+            <div class="flex items-center justify-center pr-9 py-4">
+                <img src="assets/location.png" alt="location">
+                <div class="text-white pl-3">
+                    <p class="text-base font-semibold">09/A Shib Bari</p>
+                    <p class="text-sm font-normal">Sonadanga, Khulna-9001, BD</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pr-9 py-4">
+                <img src="assets/mailbox.png" alt="mailbox">
+                <div class="text-white pl-3">
+                    <p class="text-base font-semibold">Send your mail at</p>
+                    <p class="text-sm font-normal">abc@mail.com</p>
+                </div>
+            </div>
+            <div class="flex items-center justify-center pr-9 py-4">
+                <img src="assets/working-time.png" alt="working">
+                <div class="text-white pl-3">
+                    <p class="text-base font-semibold">Working hours</p>
+                    <p class="text-sm font-normal">Mon-Fri, 08:00am - 05:00pm</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- navbar -->
+        <div class="flex pl-[300px]">
+            <img class="h-[60px] w-[100px] pr-7" src="assets/logo.png" alt="brand logo">
+            <div class="bg-[#ED6F03] flex justify-center items-center  px-5 gap-3 text-white">
+                <button
+                    class="relative z-10 flex items-center text-sm text-gray-600 bg-transparent border border-transparent rounded-md dark:text-white focus:outline-none">
+                    <span class="mx-1">Products</span>
+                    <svg class="w-5 h-5 mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 15.713L18.01 9.70299L16.597 8.28799L12 12.888L7.40399 8.28799L5.98999 9.70199L12 15.713Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
+                <button
+                    class="relative z-10 flex items-center text-sm text-gray-600 bg-transparent border border-transparent rounded-md dark:text-white focus:outline-none">
+                    <span class="mx-1">Solutions</span>
+                    <svg class="w-5 h-5 mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 15.713L18.01 9.70299L16.597 8.28799L12 12.888L7.40399 8.28799L5.98999 9.70199L12 15.713Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
+                <button
+                    class="relative z-10 flex items-center p-2 text-sm text-gray-600 bg-transparent border border-transparent rounded-md dark:text-white focus:outline-none">
+                    <span class="mx-1">Suppport</span>
+                    <svg class="w-5 h-5 mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 15.713L18.01 9.70299L16.597 8.28799L12 12.888L7.40399 8.28799L5.98999 9.70199L12 15.713Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
+                <p>Distributor</p>
+                <p>Blog</p>
+                <button
+                    class="relative z-10 flex items-center text-sm text-gray-600 bg-transparent border border-transparent rounded-md dark:text-white focus:outline-none">
+                    <span class="mx-1">About</span>
+                    <svg class="w-5 h-5 mx-1" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 15.713L18.01 9.70299L16.597 8.28799L12 12.888L7.40399 8.28799L5.98999 9.70199L12 15.713Z"
+                            fill="currentColor"></path>
+                    </svg>
+                </button>
+                <input type="text"
+                    class="w-full py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-lg  dark:text-gray-300 focus:outline-none"
+                    placeholder="Search">
+                <img src="assets/profile.png" alt="profile">
+                <img src="assets/add-to-cart.png" alt="shopping-cart">
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill"
+            style="background-image: url(https://imgs.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
+            <div class="md:w-1/2">
+                <p class="font-bold text-sm uppercase">Services</p>
+                <p class="text-3xl font-bold">Multimedia products</p>
+                <p class="text-2xl mb-10 leading-none">Atractive designs for your brand</p>
+                <a href="#"
+                    class="bg-[#ED6F03] py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact
+                    us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section>
+        <div class="bg-[#F8F8F8] py-10">
+            <h1 class="text-lg text-center text-[#AEADAA] font-bold pb-3">Our <span
+                    class="text-orange-500">Services</span>
+            </h1>
+            <p class="text-center text-black px-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
+                saepe ut atque
+                qui
+                facere dolorum nesciunt
+                beatae excepturi eligendi. Voluptate inventore repellat voluptatum impedit fugit consequuntur eaque, qui
+                dolorem quis omnis repellendus dolor molestiae eligendi deleniti minima, et odio facilis ab facere
+                maiores, distinctio doloremque! Voluptatibus reprehenderit non voluptas qui.</p>
+        </div>
+
+        <!-- Services card -->
+        <div class="py-9 px-20 flex justify-center gap-3">
+            <div class="border border-orange-200 shadow shadow-orange-300">
+                <img class="h-[300px] w-[400px]" src="assets/services.jpg" alt="services">
+                <div class="text-center">
+                    <h1 class="text-lg font-bold">Commercial Air Scrubber</h1>
+                    <p class="font-normal text-sm text-black">Commercial & industrial air scrubber</p>
+                    <button class="underline text-orange-500 py-3">Read More ></button>
+                </div>
+            </div>
+            <div class="border border-orange-200 shadow shadow-orange-300">
+                <img class="h-[300px] w-[400px]" src="assets/services.jpg" alt="services">
+                <div class="text-center">
+                    <h1 class="text-lg font-bold">Dust Collector</h1>
+                    <p class="font-normal text-sm  text-black">Commercial & industrial dust collector</p>
+                    <button class="underline text-orange-500 py-3">Read More ></button>
+                </div>
+            </div>
+            <div class="border border-orange-200 shadow shadow-orange-300">
+                <img class="h-[300px] w-[400px]" src="assets/services.jpg" alt="services">
+                <div class="text-center">
+                    <h1 class="text-lg font-bold">Air Alphafication</h1>
+                    <p class="font-normal text-sm  text-black">House Air Alphafication</p>
+                    <button class="underline text-orange-500 py-3">Under Development ></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Headquarters -->
+    <section>
+        <div class="flex mx-auto gap-1 w-full">
+            <div class="text-left w-[50%]">
+                <h1 class="text-lg text-[#AEADAA] font-bold pb-3">Our <span class="text-orange-500">Headquarters</span>
+                </h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam fuga iste, velit omnis quam
+                    laborum beatae, unde deleniti dignissimos tempore, iure tenetur sint voluptas.</p>
+            </div>
+            <div class="w-[50%]">
+                <img src="assets/play.png" alt="">
+                <p>Video</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Different -->
+    <Section>
+        <div class=' container mx-auto  xl:flex items-center mt-16 px-5 '>
+            <div class=' relative xl:w-1/2 w-full mb-10 xl:mb-0 pt-[65px] pl-12 pb-12 '>
+                <div class=' absolute top-0 left-0 h-full w-[335px] rounded-tr-[25%] bg-blue-600'>
+                </div>
+                <div>
+                    <img class="h-[300px] w-[400px]" src="assets/different.jpg" alt="different">
+                </div>
+            </div>
+
+            <div class='xl:ml-16 w-full'>
+                <div class=" group
+     cursor-pointer pl-16">
+                    <div class="before:absolute before:bg-blue-500 before:h-[2px] before:w-[50px] before:top-[10px]  before:left-[-62px] relative group-hover:before:w-[30px] before:transition-all
+         before:duration-300 before:ease-in-out mb-7">
+                        <h1 class="before:absolute before:bg-blue-500 before:h-[2px] before:w-[30px]  before:top-[20px] before:left-[-42px] md:text-[33px] text-xl uppercase relative group-hover:before:w-[36px] before:transition-all
+         before:duration-300 before:ease-in-out"><span class=" text-blue-600 font-semibold">WHAT MAKES US
+                            </span>DIFFERENT</h1>
+                    </div>
+                </div>
+
+                <p class=' md:w-[82%] md:text-lg text-gray-600 mb-10'>Purisystems is a company that specializes in
+                    manufacturing equipment for the cleanup and restoration industry. From air scrubbers to dust
+                    collectors, they have you covered with all your needs!</p>
+
+                <div class=' md:mb-8 mb-6'>
+                    <div class=' flex items-start gap-3 md:text-lg text-gray-600'>
+                        <AiFillLike class='w-[10%] md:w-auto text-blue-600' />
+                        <p class='md:w-auto w-[90%]'>UV-C Light Technology.</p>
+                    </div>
+                    <div class=' flex items-start gap-3 md:text-lg text-gray-600'>
+                        <AiFillLike class='w-[10%] md:w-auto text-blue-600' />
+                        <p class='md:w-auto w-[90%]'>Mold and Particulate Dust Contamination Restoration.</p>
+                    </div>
+                    <div class=' flex items-start gap-3 md:text-lg text-gray-600'>
+                        <AiFillLike class='w-[10%] md:w-auto text-blue-600' />
+                        <p class='md:w-auto w-[90%]'>Negative Ions Odor Eliminates and Terilization.</p>
+                    </div>
+                    <div class=' flex items-start gap-3 md:text-lg text-gray-600'>
+                        <AiFillLike class='w-[10%] md:w-auto text-blue-600' />
+                        <p class='md:w-auto w-[90%]'>Professional 3-Stage Filtration Industrial Grade Air
+                            Purifilters.</p>
+                    </div>
+                </div>
+
+                <button class="btn-4 mb-5"><span>GET IN TOUCH</span></button>
+            </div>
+        </div>
+    </Section>
+
+    <!-- Partner -->
+    <section>
+        <div class=" container  my-32 mx-auto  2xl:px-20 px-5">
+            <div
+                class="md:flex items-center justify-between bg-gradient-to-r from-orange-500 to-tomato-300 rounded-2xl py-5">
+                <div class="xl:w-1/2 lg:w-5/12 w-full">
+                    <p class=" xl:text-[36px] text-xl text-white pl-[50px] pr-[20px] py-[50px]">Looking For Best Partner
+                        <br />For Your Own Successful Business?
+                    </p>
+                </div>
+                <div class="xl:w-1/2 lg:w-7/12 w-full flex items-center justify-between relative pl-14">
+                    <button class="group relative h-14 w-44 overflow-hidden rounded-lg bg-white text-lg shadow">
+                        <div
+                            class="absolute inset-0 w-0 bg-amber-400 transition-all duration-[250ms] ease-out group-hover:w-full">
+                        </div>
+                        <span class="relative text-black group-hover:text-white">Apply Now</span>
+                    </button>
+                    <div class=' absolute right-10 xl:-bottom-[96px] -bottom-[70px] hidden lg:block'>
+                        <img src="assets/person.png" alt="Picture of the author"
+                            class=' xl:w-[250px] w-[200px] xl:h-[320px]' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section>
+        <div class="bg-orange-500 py-6 ">
+            <div class="container mx-auto px-5">
+                <div class="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                    <div class="px-5 sm:px-0 sm:pl-4">
+                        <h3 class="uppercase text-white text-xl 2xl:text-2xl font-semibold tracking-tight mb-2">
+                            SUBSCRIBE TO OUR NEWSLETTER!
+                        </h3>
+                        <p class="text-white text-sm sm:text-base font-semibold">
+                            We’re inspired by people like you to make technology better.
+                        </p>
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Name"
+                            class="py-2 px-4 mt-6 md:mt-0 md:ml-14 2xl:ml-20 placeholder:text-lg placeholder:text-black w-[300px] sm:w-[450px] md:w-[300px] lg:w-[240px] xl:w-[300px] 2xl:w-[350px] focus:outline-none" />
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email"
+                            class="mt-5 md:mr-20 lg:mr-0 lg:mt-0 lg:ml-16 xl:ml-24 2xl:ml-32 placeholder:text-lg placeholder:text-black py-2 px-4 w-[300px] sm:w-[450px] md:w-[300px] lg:w-[240px] xl:w-[300px] 2xl:w-[350px] focus:outline-none" />
+                    </div>
+                    <div>
+                        <input type="submit" value="Submit"
+                            class="mt-5 lg:mt-0 text-white bg-slate-900 py-2 px-8 md:py-3 md:px-12 text-lg md:text-xl font-semibold hover:bg-black" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section>
+        <div class="container mx-auto pt-12">
+            <div class="grid sm:grid-cols-2 md:grid-cols-3">
+                <div>
+                    <div>
+                        <h5 class="font-semibold text-lg mb-4">Helpful Links</h5>
+                        <div class="flex items-center mb-4">
+
+                            <img src="assets/support.png" alt="Picture of the author" class="w-10 mr-2" />
+
+                            <a href="#">Need Help?</a>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="assets/wishlist.png" alt="Picture of the author" class="w-10 mr-2" />
+                            <a href="#">Wishlist</a>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <ul>
+                            <h5 class="font-semibold text-lg">About</h5>
+                            <li>
+                                <p class="text-base text-[#8b8b8b] hover:text-blue-600">Our Company</p>
+                            </li>
+                            <li>
+                                <p class="text-base text-[#8b8b8b] hover:text-blue-600">Contact Us</p>
+                            </li>
+                            <li>
+                                <p class="text-base text-[#8b8b8b] hover:text-blue-600">Why Us</p>
+                            </li>
+                            <li>
+                                <p class="text-base text-[#8b8b8b] hover:text-blue-600">Customization</p>
+                            </li>
+                            <li>
+                                <p class="text-base text-[#8b8b8b] hover:text-blue-600">Privacy Policy</p>
+                            </li>
+                            <li>
+                                <p class="text-base text-[#8b8b8b] hover:text-blue-600">Our Company</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="pt-10">
+                    <div>
+                        <div class="flex items-center">
+
+                            <img src="assets/orderStatus.png" alt="Picture of the author" class="w-10 mr-2" />
+                            <a href="#" class="text-lg hover:text-blue-600">Order Status</a>
+                        </div>
+                        <div class="flex items-center">
+                            <img src="assets/faq.png" alt="Picture of the author" class="w-10 mr-2 mt-4" />
+                            <a href="#" class="text-lg hover:text-blue-600">Online FAQ's</a>
+                        </div>
+                    </div>
+                    <div class="mt-6">
+                        <ul>
+                            <h5 class="font-semibold text-lg">Air Solutions</h5>
+                            <li>
+                                <a href="#" class="text-base text-[#8b8b8b] hover:text-blue-600">
+                                    Commercial</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-base text-[#8b8b8b] hover:text-blue-600">
+                                    Heathy Home</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-base text-[#8b8b8b] hover:text-blue-600">
+                                    Healthy Air System</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mt-6">
+                        <ul>
+                            <h5 class="font-semibold text-lg">Support</h5>
+                            <li>
+                                <a href="#" class="text-base text-[#8b8b8b] hover:text-blue-600">
+                                    Warranty Registration</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-base text-[#8b8b8b] hover:text-blue-600">
+                                    Video Center</a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-base text-[#8b8b8b] hover:text-blue-600">Healthy Air System</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div>
+                    <h5 class="font-semibold text-lg mb-4">Connect with Purisystems</h5>
+                    <div class="flex space-x-4">
+                        <img src="assets/facebook.png" alt="Picture of the author" class="w-12" />
+
+                        <img src="assets/twitter.png" alt="Picture of the author" class="w-12" />
+
+
+                        <img src="assets/instagram.png" alt="Picture of the author" class="w-12" />
+                        <img src="assets/linkedin.png" alt="Picture of the author" class="w-12" />
+                        <img src="assets/youtube.png" alt="Picture of the author" class="w-12" />
+                    </div>
+                    <div class="mt-6">
+                        <h5 class="font-semibold text-lg">
+                            Purisystems provided the highest performance air filtration for
+                            residential and commercial use for over 20 years.
+                        </h5>
+                        <p class="text-base text-[#8b8b8b] mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam perferendis distinctio,
+                            provident fugit id illo?
+                        </p>
+                        <p class="text-base text-[#8b8b8b] mt-6">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut illum, aliquam architecto illo
+                            libero neque minima incidunt atque consequatur quibusdam dolores magnam maxime totam
+                            expedita! Perspiciatis minus id cumque itaque.
+                        </p>
+                    </div>
+                    <div>
+                        <h5 class="font-semibold text-lg my-5">Get in Touch with us !</h5>
+                        <p class="flex items-center text-base text-[#686767]">
+
+                            <img src="assets/location-pointer.png" alt="Picture of the author" class="w-6 h-6 mr-2" />
+                            09/A Shib Bari
+                            Sonadanga, Khulna-9001, BD
+                        </p>
+                        <p class="flex items-center text-base text-[#686767]">
+                            <img src="assets/email.png" alt="Picture of the author" class="w-6 h-6 mr-2" />
+                            abc@mail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img class="h-[200px] w-[200px]" src="assets/logo.png" alt="logo">
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <section>
+        <div class="bg-[#212529] text-white py-5 pl-20">
+            <div class="flex gap-5 underline">
+                <p>Copyright ©2023 All rights reserved</p>
+                <p>Security & Privacy</p>
+                <p>Terms & Conditions</p>
+                <p>Shipping & Returns</p>
+                <p>Warranty Registration</p>
+            </div>
+            <p class="pt-2">For any difficulty, contact us abc@mail.com</p>
+        </div>
+    </section>
+</body>
+
+</html>
