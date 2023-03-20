@@ -6,42 +6,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Job Task</title>
+    <!-- css linked -->
+    <link rel="stylesheet" href="./style.css">
     <!-- Tailwind linked -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- swiper js linked -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
     <!-- Header -->
     <section class="bg-[#212529]">
 
-        <div class="flex justify-center">
-            <div class="flex items-center justify-center pr-9 py-4">
-                <img src="assets/location.png" alt="location">
-                <div class="text-white pl-3">
-                    <p class="text-base font-semibold">09/A Shib Bari</p>
-                    <p class="text-sm font-normal">Sonadanga, Khulna-9001, BD</p>
+        <!-- Top Nav -->
+        <div class="flex items-center justify-center gap-20">
+            <div class="h-[49px] w-[300px] relative z-10  ">
+                <div class='flex items-center h-full text-xl justify-end gap-8 pr-10 z-50 '>
+                    <img src="assets/facebook.png" alt="facebook">
+                    <img src="assets/instagram.png" alt="instagram">
+                    <img src="assets/linkedin.png" alt="linkedin">
+                    <img src="assets/twitter.png" alt="twitter">
+                    <img src="assets/youtube.png" alt="youtube">
                 </div>
+                <div class=' h-full absolute top-0 w-[300px] bg-white z-[-1]'></div>
             </div>
-            <div class="flex items-center justify-center pr-9 py-4">
-                <img src="assets/mailbox.png" alt="mailbox">
-                <div class="text-white pl-3">
-                    <p class="text-base font-semibold">Send your mail at</p>
-                    <p class="text-sm font-normal">abc@mail.com</p>
+
+            <div class="flex justify-center">
+                <div class="flex items-center justify-center pr-9 py-4">
+                    <img src="assets/location.png" alt="location">
+                    <div class="text-white pl-3">
+                        <p class="text-base font-semibold">09/A Shib Bari</p>
+                        <p class="text-sm font-normal">Sonadanga, Khulna-9001, BD</p>
+                    </div>
                 </div>
-            </div>
-            <div class="flex items-center justify-center pr-9 py-4">
-                <img src="assets/working-time.png" alt="working">
-                <div class="text-white pl-3">
-                    <p class="text-base font-semibold">Working hours</p>
-                    <p class="text-sm font-normal">Mon-Fri, 08:00am - 05:00pm</p>
+                <div class="flex items-center justify-center pr-9 py-4">
+                    <img src="assets/mailbox.png" alt="mailbox">
+                    <div class="text-white pl-3">
+                        <p class="text-base font-semibold">Send your mail at</p>
+                        <p class="text-sm font-normal">abc@mail.com</p>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center pr-9 py-4">
+                    <img src="assets/working-time.png" alt="working">
+                    <div class="text-white pl-3">
+                        <p class="text-base font-semibold">Working hours</p>
+                        <p class="text-sm font-normal">Mon-Fri, 08:00am - 05:00pm</p>
+                    </div>
                 </div>
             </div>
         </div>
 
         <!-- navbar -->
-        <div class="flex pl-[300px]">
-            <img class="h-[60px] w-[100px] pr-7" src="assets/logo.png" alt="brand logo">
-            <div class="bg-[#ED6F03] flex justify-center items-center  px-5 gap-3 text-white">
+        <div class="container justify-center gap-5 mx-auto flex px-20">
+            <p class="text-white text-3xl font-bold">
+                Oxyge<span class="text-orange-500">N</span>
+            </p>
+            <div class="bg-[#ED6F03] flex justify-center items-center py-1 px-5 gap-3 text-white">
                 <button
                     class="relative z-10 flex items-center text-sm text-gray-600 bg-transparent border border-transparent rounded-md dark:text-white focus:outline-none">
                     <span class="mx-1">Products</span>
@@ -89,58 +109,87 @@
         </div>
 
         <!-- Banner -->
-        <div class="bg-cover bg-center  h-auto text-white py-24 px-10 object-fill"
-            style="background-image: url(https://imgs.unsplash.com/photo-1558981806-ec527fa84c39?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)">
-            <div class="md:w-1/2">
-                <p class="font-bold text-sm uppercase">Services</p>
-                <p class="text-3xl font-bold">Multimedia products</p>
-                <p class="text-2xl mb-10 leading-none">Atractive designs for your brand</p>
-                <a href="#"
-                    class="bg-[#ED6F03] py-4 px-8 text-white font-bold uppercase text-xs rounded hover:bg-gray-200 hover:text-gray-800">Contact
-                    us</a>
+        <div class="swiper mySwiper h-[450px]">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide h-full">
+                    <img class="h-full w-full" src="assets/product1.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img class="h-full w-full" src="assets/product2.jpg" alt="" />
+                </div>
             </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section>
-        <div class="bg-[#F8F8F8] py-10">
-            <h1 class="text-lg text-center text-[#AEADAA] font-bold pb-3">Our <span
-                    class="text-orange-500">Services</span>
+    <section class="bg-[#F8F8F8] py-20">
+        <div class="container py-10 mx-auto px-10">
+            <h1 class="text-center font-bold pb-3 text-3xl">
+                ALPHASYSTEM <span class="text-orange-500">HEALTHY AIR SYSTEM</span>
             </h1>
-            <p class="text-center text-black px-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-                saepe ut atque
-                qui
-                facere dolorum nesciunt
-                beatae excepturi eligendi. Voluptate inventore repellat voluptatum impedit fugit consequuntur eaque, qui
-                dolorem quis omnis repellendus dolor molestiae eligendi deleniti minima, et odio facilis ab facere
-                maiores, distinctio doloremque! Voluptatibus reprehenderit non voluptas qui.</p>
+            <p class="text-black px-10 text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi saepe
+                ut atque qui facere dolorum nesciunt beatae excepturi eligendi.
+                Voluptate inventore repellat voluptatum impedit fugit consequuntur
+                eaque, qui dolorem quis omnis repellendus dolor molestiae eligendi
+                deleniti minima, et odio facilis ab facere maiores, distinctio
+                doloremque! Voluptatibus reprehenderit non voluptas qui.
+            </p>
         </div>
 
         <!-- Services card -->
-        <div class="py-9 px-20 flex justify-center gap-3">
-            <div class="border border-orange-200 shadow shadow-orange-300">
-                <img class="h-[300px] w-[400px]" src="assets/services.jpg" alt="services">
-                <div class="text-center">
-                    <h1 class="text-lg font-bold">Commercial Air Scrubber</h1>
-                    <p class="font-normal text-sm text-black">Commercial & industrial air scrubber</p>
-                    <button class="underline text-orange-500 py-3">Read More ></button>
+        <div class="container py-9 px-20 flex justify-center gap-10 mx-auto h-[490px]">
+            <div class="relative w-1/3 rounded-xl overflow-hidden group cursor-pointer shadow-lg">
+                <img class="h-full w-full"
+                    src="https://images.pexels.com/photos/2138126/pexels-photo-2138126.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="services" />
+                <div
+                    class="text-center absolute bottom-0 left-0 w-full bg-white py-3 group-hover:bg-orange-500 group-hover:pt-6 transition-all duration-300 ease-in-out">
+                    <h1 class="text-lg font-semibold">Commercial Air Scrubber</h1>
+                    <p class="font-normal text-xs text-black">
+                        Commercial & industrial air scrubber
+                    </p>
+                    <button
+                        class="underline text-orange-500 py-3 group-hover:text-white transition-all duration-300 ease-in-out">
+                        Read More >
+                    </button>
                 </div>
             </div>
-            <div class="border border-orange-200 shadow shadow-orange-300">
-                <img class="h-[300px] w-[400px]" src="assets/services.jpg" alt="services">
-                <div class="text-center">
-                    <h1 class="text-lg font-bold">Dust Collector</h1>
-                    <p class="font-normal text-sm  text-black">Commercial & industrial dust collector</p>
-                    <button class="underline text-orange-500 py-3">Read More ></button>
+
+            <div class="relative w-1/3 rounded-xl overflow-hidden group cursor-pointer shadow-lg">
+                <img class="h-full w-full"
+                    src="https://images.pexels.com/photos/2566850/pexels-photo-2566850.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt="services" />
+                <div
+                    class="text-center absolute bottom-0 left-0 w-full bg-white py-3 group-hover:bg-orange-500 group-hover:pt-6 transition-all duration-300 ease-in-out">
+                    <h1 class="text-lg font-semibold">Commercial Air Scrubber</h1>
+                    <p class="font-normal text-xs text-black">
+                        Commercial & industrial air scrubber
+                    </p>
+                    <button
+                        class="underline text-orange-500 py-3 group-hover:text-white transition-all duration-300 ease-in-out">
+                        Read More >
+                    </button>
                 </div>
             </div>
-            <div class="border border-orange-200 shadow shadow-orange-300">
-                <img class="h-[300px] w-[400px]" src="assets/services.jpg" alt="services">
-                <div class="text-center">
-                    <h1 class="text-lg font-bold">Air Alphafication</h1>
-                    <p class="font-normal text-sm  text-black">House Air Alphafication</p>
-                    <button class="underline text-orange-500 py-3">Under Development ></button>
+
+            <div class="relative w-1/3 rounded-xl overflow-hidden group cursor-pointer shadow-lg">
+                <img class="h-full w-full"
+                    src="https://images.pexels.com/photos/5985391/pexels-photo-5985391.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                    alt="services" />
+                <div
+                    class="text-center absolute bottom-0 left-0 w-full bg-white py-3 group-hover:bg-orange-500 group-hover:pt-6 transition-all duration-300 ease-in-out">
+                    <h1 class="text-lg font-semibold">Commercial Air Scrubber</h1>
+                    <p class="font-normal text-xs text-black">
+                        Commercial & industrial air scrubber
+                    </p>
+                    <button
+                        class="underline text-orange-500 py-3 group-hover:text-white transition-all duration-300 ease-in-out">
+                        Read More >
+                    </button>
                 </div>
             </div>
         </div>
@@ -148,91 +197,496 @@
 
     <!-- Headquarters -->
     <section>
-        <div class="flex mx-auto gap-1 w-full">
-            <div class="text-left w-[50%]">
-                <h1 class="text-lg text-[#AEADAA] font-bold pb-3">Our <span class="text-orange-500">Headquarters</span>
-                </h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aperiam fuga iste, velit omnis quam
-                    laborum beatae, unde deleniti dignissimos tempore, iure tenetur sint voluptas.</p>
+        <div class='my-28'>
+            <div class=' container mx-auto px-16'>
+                <div class='items-center gap-10 mb-10'>
+                    <div class='flex'>
+                        <div class="w-[65%]">
+                            <h1 class="text-3xl my-4">ALPHASYSTEM
+                                <span class="text-orange-500 font-semibold"> U.S. HEADQUARTERS</span>
+                            </h1>
+                            <p>We help people breathe
+                                cleaner
+                                air through high-performance HEPA air purification products. Purisystems can remove dust
+                                particles from the air, and circulate the air in your work area to eliminate these
+                                pollutants, enhance creativity, improve thinking clarity, prevent diseases, accelerate
+                                recovery, and purify the air.</p>
+                        </div>
+                        <div class="w-[30%] flex flex-col items-center justify-center">
+                            <img class="h-20" src="assets/play.png" alt="play">
+                            <h1 class="pt-2">VIDEO</h1>
+                        </div>
+                    </div>
+
+                    <div class='mt-10 h-[380px] flex items-center justify-between gap-20'>
+                        <div class=' h-full w-2/3'>
+                            <img class="h-[380px] w-full" src="assets/product5.jpg" alt="">
+                        </div>
+
+                        <div class=' h-full w-1/3 bg-orange-500 px-5 py-8'>
+                            <h1 class=' md:text-[30px] text-xl mb-4 text-white'>Purisystems <span
+                                    class=' font-semibold'>Commercial Air Solutions</span></h1>
+                            <p class='text-base mb-3'>With Purisystems, businesses can
+                                breathe
+                                easy knowing they're providing the highest quality of air with HEPA filters.</p>
+                            <p class='text-sm mb-9'>Remove particles like dust or
+                                allergens
+                                such pollens to promote safety.</p>
+                            <button class="py-2 px-7 rounded bg-white text-black mb-5"><span>LEARN MORE</span></button>
+                        </div>
+
+                    </div>
+
+                    <div class='flex items-center gap-20 mt-16 pb-10'>
+                        <div class='flex items-center gap-6'>
+                            <img src="assets/warranty.png" alt="Picture of the author" class='w-[60px] h-[60px]' />
+                            <div class='text-orange-500'>
+                                <h1 class=' text-xl font-semibold'>BEST QUALITY</h1>
+                                <p class='text-sm'>GUARANTEE</p>
+                            </div>
+                        </div>
+                        <div class='flex items-center gap-6'>
+                            <img src="assets/achievement.png" alt="Picture of the author" class='w-[60px] h-[60px]' />
+                            <div class='text-orange-500'>
+                                <h1 class='text-xl font-semibold'>1 YEAR</h1>
+                                <p class='text-sm'>WARRENTY</p>
+                            </div>
+                        </div>
+                        <div class='flex items-center gap-6'>
+                            <img src="assets/shipping.png" alt="Picture of the author" class='w-[60px] h-[60px]' />
+                            <div class='text-orange-500'>
+                                <h1 class='text-xl font-semibold'>WORLDWIDE</h1>
+                                <p class='text-sm'>SHIPPING</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="w-[50%]">
-                <img src="assets/play.png" alt="">
-                <p>Video</p>
-            </div>
-        </div>
     </section>
 
     <!-- Different -->
     <Section>
-        <div class=' container mx-auto  xl:flex items-center mt-16 px-5 '>
-            <div class=' relative xl:w-1/2 w-full mb-10 xl:mb-0 pt-[65px] pl-12 pb-12 '>
-                <div class=' absolute top-0 left-0 h-full w-[335px] rounded-tr-[25%] bg-blue-600'>
+        <div class='container flex mx-auto items-center px-5 mb-10'>
+            <div class='relative w-full mb-10 pt-[65px] pl-12 pb-12 '>
+                <div class='absolute top-0 left-0 h-full w-[335px] -z-10 rounded-tr-[25%] bg-orange-500'>
                 </div>
                 <div>
-                    <img class="h-[300px] w-[400px]" src="assets/different.jpg" alt="different">
+                    <img class="h-[300px] w-[500px] z-10" src="assets/different.jpg" alt="different">
                 </div>
             </div>
 
-            <div class='xl:ml-16 w-full'>
-                <div class=" group
-     cursor-pointer pl-16">
-                    <div class="before:absolute before:bg-blue-500 before:h-[2px] before:w-[50px] before:top-[10px]  before:left-[-62px] relative group-hover:before:w-[30px] before:transition-all
-         before:duration-300 before:ease-in-out mb-7">
-                        <h1 class="before:absolute before:bg-blue-500 before:h-[2px] before:w-[30px]  before:top-[20px] before:left-[-42px] md:text-[33px] text-xl uppercase relative group-hover:before:w-[36px] before:transition-all
-         before:duration-300 before:ease-in-out"><span class=" text-blue-600 font-semibold">WHAT MAKES US
-                            </span>DIFFERENT</h1>
-                    </div>
+            <div class='w-full'>
+                <div class="mb-7">
+                    <h1 class=" text-3xl"><span class=" text-orange-500 font-semibold">WHAT MAKES US
+                        </span>DIFFERENT</h1>
                 </div>
 
-                <p class=' md:w-[82%] md:text-lg text-gray-600 mb-10'>Purisystems is a company that specializes in
+                <p class='mb-10'>Purisystems is a company that specializes in
                     manufacturing equipment for the cleanup and restoration industry. From air scrubbers to dust
                     collectors, they have you covered with all your needs!</p>
 
-                <div class=' md:mb-8 mb-6'>
-                    <div class=' flex items-start gap-3 md:text-lg text-gray-600'>
-                        <AiFillLike class='w-[10%] md:w-auto text-blue-600' />
-                        <p class='md:w-auto w-[90%]'>UV-C Light Technology.</p>
+                <div class='mb-6'>
+                    <div class='flex items-start gap-3'>
+                        <img src="assets/thumb-up.png" alt="like">
+                        <p class='w-[90%]'>UV-C Light Technology.</p>
                     </div>
-                    <div class=' flex items-start gap-3 md:text-lg text-gray-600'>
-                        <AiFillLike class='w-[10%] md:w-auto text-blue-600' />
-                        <p class='md:w-auto w-[90%]'>Mold and Particulate Dust Contamination Restoration.</p>
+                    <div class=' flex items-start gap-3 py-1'>
+                        <img src="assets/thumb-up.png" alt="like">
+                        <p class='w-[90%]'>Mold and Particulate Dust Contamination Restoration.</p>
                     </div>
-                    <div class=' flex items-start gap-3 md:text-lg text-gray-600'>
-                        <AiFillLike class='w-[10%] md:w-auto text-blue-600' />
-                        <p class='md:w-auto w-[90%]'>Negative Ions Odor Eliminates and Terilization.</p>
+                    <div class=' flex items-start gap-3'>
+                        <img src="assets/thumb-up.png" alt="like">
+                        <p class='w-[90%]'>Negative Ions Odor Eliminates and Terilization.</p>
                     </div>
-                    <div class=' flex items-start gap-3 md:text-lg text-gray-600'>
-                        <AiFillLike class='w-[10%] md:w-auto text-blue-600' />
-                        <p class='md:w-auto w-[90%]'>Professional 3-Stage Filtration Industrial Grade Air
+                    <div class=' flex items-start gap-3 pt-1'>
+                        <img src="assets/thumb-up.png" alt="like">
+                        <p class='w-[90%]'>Professional 3-Stage Filtration Industrial Grade Air
                             Purifilters.</p>
                     </div>
                 </div>
 
-                <button class="btn-4 mb-5"><span>GET IN TOUCH</span></button>
+                <button class="btn-4 mb-5 text-white bg-orange-500 px-3 py-1"><span>GET IN TOUCH</span></button>
             </div>
         </div>
     </Section>
 
+    <!-- Technology -->
+    <section class="bg-gray-200">
+        <div class="container mx-auto py-10">
+            <h1 class="text-3xl text-orange-500 text-center pb-5">Technology <span class="text-black">Guidelines</span>
+            </h1>
+            <p class=" text-center mb-10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cum odit
+                voluptatibus
+                molestias nihil voluptatem at, fugiat in suscipit iure.</p>
+            <div class="flex gap-5 justify-center">
+                <div class="border border-t-orange-500 h-[500px] w-[400px] bg-white py-10 pl-10 text-left">
+                    <img class="h-[80px] w-[100px]" src="assets/air-conditioner.png" alt="logo">
+                    <p>Award winning solution</p>
+                    <h1 class="text-3xl font-semibold">Healthy Air <br> System</h1>
+                    <p class="py-10">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti at perspiciatis
+                        voluptate,
+                        eaque impedit eius mollitia quod quaerat odit a.</p>
+                    <button class="underline text-orange-500 py-3">Read More ></button>
+                </div>
+                <div>
+                    <img class=" h-[500px] w-[400px]" src="assets/heater.jpg" alt="logo">
+                </div>
+                <div class="bg-orange-500 h-[500px] w-[400px] p-10 text-center text-white">
+                    <div class="flex mx-auto items-center justify-center bg-white rounded-full p-1 h-[150px] w-[150px]">
+                        <img class="h-[80px] w-[80px]" src="assets/ac.png" alt="logo">
+                    </div>
+                    <p class="py-5">Let's clear the air</p>
+                    <h1 class="text-3xl font-semibold">Healthy clean air</h1>
+                    <p class="py-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti at perspiciatis
+                        voluptate,
+                        eaque impedit eius mollitia quod quaerat odit a.</p>
+                    <button class="underline py-3">Read More ></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest -->
+    <section>
+        <div class=" container mx-auto my-20 px-5">
+            <h1 class="text-3xl text-orange-500 text-left pb-5">LATEST <span class="text-black">ARRIVALS</span>
+            </h1>
+            <p class=" mt-5 text-[19px] text-left">Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Dicta minus, a consectetur, in dignissimos molestias corporis corrupti temporibus modi
+                asperiores esse soluta distinctio, nostrum repudiandae nisi commodi! Distinctio reprehenderit iure quasi
+                beatae. Corrupti, minus sequi? Velit, earum ut.</p>
+
+            <div class="grid grid-cols-4 mt-10 justify-center text-center">
+                <div class=" flex flex-col p-6 border border-gray-300">
+                    <div class="mx-auto h-[200px]">
+                        <img src="assets/product1.jpg" alt="Picture of the author" width={270} height={185} />
+                    </div>
+                    <div class="text-left">
+                        <h1 class="my-10 font-semibold text-[18px]">Alpha 600</h1>
+                        <p class="text-[16px] mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sed expedita, libero saepe cum voluptatum consequatur illum molestias perferendis
+                            voluptatibus! Facilis!</p>
+                    </div>
+                    <div class="flex items-center gap-10 justify-start text-left">
+                        <h1 class="text-2xl font-semibold ml-3">$100</h1>
+                        <button class="flex items-center gap-2 text-orange-500 underline text-lg">SHOP NOW ></button>
+                    </div>
+                </div>
+                <div class=" flex flex-col p-6 border border-gray-300">
+                    <div class="mx-auto h-[200px]">
+                        <img src="assets/product2.jpg" alt="Picture of the author" width={270} height={185} />
+                    </div>
+                    <div class="text-left">
+                        <h1 class="my-10 font-semibold text-[18px]">Alpha 600pro</h1>
+                        <p class="text-[16px] mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sed expedita, libero saepe cum voluptatum consequatur illum molestias perferendis
+                            voluptatibus! Facilis!</p>
+                    </div>
+                    <div class="flex items-center gap-10 justify-start text-left">
+                        <h1 class="text-2xl font-semibold ml-3">$200</h1>
+                        <button class="flex items-center gap-2 text-orange-500 underline text-lg">SHOP NOW ></button>
+                    </div>
+                </div>
+                <div class="flex flex-col p-6 border border-gray-300">
+                    <div class="mx-auto h-[200px]">
+                        <img src="assets/product3.jpg" alt="Picture of the author" width={270} height={185} />
+                    </div>
+                    <div class=" text-left">
+                        <h1 class=" my-10 font-semibold text-[18px] ">Alphacare 500</h1>
+                        <p class=" text-[16px] mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sed expedita, libero saepe cum voluptatum consequatur illum molestias perferendis
+                            voluptatibus! Facilis!</p>
+                    </div>
+                    <div class="flex items-center gap-10 justify-start text-left">
+                        <h1 class="text-2xl font-semibold ml-3">$500</h1>
+                        <button class=" flex items-center gap-2 text-orange-500 underline text-lg">SHOP NOW ></button>
+                    </div>
+                </div>
+                <div class="flex flex-col p-6 border border-gray-300">
+                    <div class="mx-auto h-[200px]">
+                        <img src="assets/product4.jpg" alt="Picture of the author" width={270} height={185} />
+                    </div>
+                    <div class="text-left">
+                        <h1 class="my-10 font-semibold text-[18px] ">Alphacare 500IG</h1>
+                        <p class="text-[16px] mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sed expedita, libero saepe cum voluptatum consequatur illum molestias perferendis
+                            voluptatibus! Facilis!</p>
+                    </div>
+                    <div class="flex items-center gap-10 justify-start text-left">
+                        <h1 class="text-2xl font-semibold ml-3">$450</h1>
+                        <button class="flex items-center gap-2 text-orange-500 underline text-lg">SHOP NOW ></button>
+                    </div>
+                </div>
+                <div class="flex flex-col  p-6 border border-gray-300">
+                    <div class="mx-auto h-[200px]">
+                        <img src="assets/product5.jpg" alt="Picture of the author" width={270} height={185} />
+                    </div>
+                    <div class=" text-left">
+                        <h1 class=" my-10 font-semibold text-[18px] ">Alphacare 1100</h1>
+                        <p class=" text-[16px] mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sed expedita, libero saepe cum voluptatum consequatur illum molestias perferendis
+                            voluptatibus! Facilis!</p>
+                    </div>
+                    <div class="flex items-center gap-10 justify-start text-left">
+                        <h1 class="text-2xl font-semibold ml-3">$2200</h1>
+                        <button class=" flex items-center gap-2 text-orange-500 underline text-lg">SHOP NOW ></button>
+                    </div>
+                </div>
+                <div class="flex flex-col  p-6 border border-gray-300">
+                    <div class="mx-auto h-[200px]">
+                        <img src="assets/product6.jpg" alt="Picture of the author" width={270} height={185} />
+                    </div>
+                    <div class=" text-left">
+                        <h1 class=" my-10 font-semibold text-[18px]">Alphacare 1100IG</h1>
+                        <p class=" text-[16px] mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sed expedita, libero saepe cum voluptatum consequatur illum molestias perferendis
+                            voluptatibus! Facilis!</p>
+                    </div>
+                    <div class="flex items-center gap-10 justify-start text-left">
+                        <h1 class="text-2xl font-semibold ml-3">$4200</h1>
+                        <button class=" flex items-center gap-2 text-orange-500 underline text-lg">SHOP NOW ></button>
+                    </div>
+                </div>
+                <div class=" flex flex-col  p-6 border border-gray-300">
+                    <div class="mx-auto h-[200px]">
+                        <img src="assets/product7.jpg" alt="Picture of the author" width={270} height={185} />
+                    </div>
+                    <div class="text-left">
+                        <h1 class="my-10 font-semibold text-[18px]">5 Micron outer</h1>
+                        <p class="text-[16px] mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sed expedita, libero saepe cum voluptatum consequatur illum molestias perferendis
+                            voluptatibus! Facilis!</p>
+                    </div>
+                    <div class="flex items-center gap-10 justify-start text-left">
+                        <h1 class="text-2xl font-semibold ml-3">$70</h1>
+                        <button class=" flex items-center gap-2 text-orange-500 underline text-lg">SHOP NOW ></button>
+                    </div>
+                </div>
+                <div class=" flex flex-col  p-6 border border-gray-300">
+                    <div class="mx-auto h-[200px]">
+                        <img src="assets/product8.jpg" alt="Picture of the author" width={270} height={185} />
+                    </div>
+                    <div class=" text-left">
+                        <h1 class=" my-10 font-semibold text-[18px] ">1 micron inner</h1>
+                        <p class=" text-[16px] mb-6">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Sed expedita, libero saepe cum voluptatum consequatur illum molestias perferendis
+                            voluptatibus! Facilis!</p>
+                    </div>
+                    <div class="flex items-center gap-10 justify-start text-left">
+                        <h1 class="text-2xl font-semibold ml-3">$60</h1>
+                        <button class=" flex items-center gap-2 text-orange-500 underline text-lg">SHOP NOW ></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog -->
+    <section>
+        <div class='pt-16'>
+            <div class="container mx-auto">
+                <h1 class="text-3xl text-orange-500 text-center pb-5">LATEST <span class="text-black">BLOGS</span>
+                </h1>
+                <p class=" text-center mb-10">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis
+                    doloribus
+                    esse aperiam tempore neque fuga natus explicabo provident, atque odit libero voluptate, maxime
+                    maiores
+                    aspernatur impedit dolore nihil consequuntur. Totam, inventore! Repudiandae sunt rem doloribus harum
+                    nostrum iure quod ab?</p>
+            </div>
+
+            <div class="container mx-auto grid grid-cols-3 items-center justify-between gap-8 px-5 mt-12 mb-28">
+                <div
+                    class='container px-20 w-full relative bg-[#F6F7F8] rounded-3xl py-9 z-[0]  border-2 border-[#F6F7F8]'>
+                    <div>
+                        <p class='text-lg font-medium text-gray-500 mb-10'>
+                            Technology</p>
+                        <h1 class='text-lg font-bold mb-10'>
+                            HOW DO HEPA FILTERS AND UV LIGHT AIR PURIFIERS WORK</h1>
+                        <p class='mb-10 text-sm text-black'>
+                            HEPA stands for “high-efficiency particulate arresting”, these filters are really good at
+                            pulling things out of the air and holding onto them so that they can’t be recirculated. The
+                            fibers in a HEPA filter are designed to trap particles as small as .01 micron in diameter.
+                        </p>
+                        <div class='flex justify-end'>
+                            <button class='flex justify-end items-center gap-3'>Read
+                                More
+                                <HiArrowSmRight />
+                            </button>
+                        </div>
+                    </div>
+                    <div class='absolute top-4 right-4 text-gray-300 font-bold text-[55px] z-[-1]'>
+                        <p class=' mb-0'>19</p>
+                        <p class=' mt-0'>FEB</p>
+                    </div>
+                </div>
+                <div
+                    class='container px-20 w-full relative bg-[#F6F7F8] rounded-3xl py-9 z-[0]  border-2 border-[#F6F7F8]'>
+                    <div>
+                        <p class='text-lg font-medium text-gray-500 mb-10'>
+                            Technology</p>
+                        <h1 class='text-lg font-bold mb-10'>
+                            HOW DO HEPA FILTERS AND UV LIGHT AIR PURIFIERS WORK</h1>
+                        <p class='mb-10 text-sm text-black'>
+                            HEPA stands for “high-efficiency particulate arresting”, these filters are really good at
+                            pulling things out of the air and holding onto them so that they can’t be recirculated. The
+                            fibers in a HEPA filter are designed to trap particles as small as .01 micron in diameter.
+                        </p>
+                        <div class='flex justify-end'>
+                            <button class='flex justify-end items-center gap-3'>Read
+                                More
+                                <HiArrowSmRight />
+                            </button>
+                        </div>
+                    </div>
+                    <div class='absolute top-4 right-4 text-gray-300 font-bold text-[55px] z-[-1]'>
+                        <p class=' mb-0'>19</p>
+                        <p class=' mt-0'>FEB</p>
+                    </div>
+                </div>
+                <div
+                    class='container px-20 w-full relative bg-[#F6F7F8] rounded-3xl py-9 z-[0]  border-2 border-[#F6F7F8]'>
+                    <div>
+                        <p class='text-lg font-medium text-gray-500 mb-10'>
+                            Technology</p>
+                        <h1 class='text-lg font-bold mb-10'>
+                            HOW DO HEPA FILTERS AND UV LIGHT AIR PURIFIERS WORK</h1>
+                        <p class='mb-10 text-sm text-black'>
+                            HEPA stands for “high-efficiency particulate arresting”, these filters are really good at
+                            pulling things out of the air and holding onto them so that they can’t be recirculated. The
+                            fibers in a HEPA filter are designed to trap particles as small as .01 micron in diameter.
+                        </p>
+                        <div class='flex justify-end'>
+                            <button class='flex justify-end items-center gap-3'>Read
+                                More
+                                <HiArrowSmRight />
+                            </button>
+                        </div>
+                    </div>
+                    <div class='absolute top-4 right-4 text-gray-300 font-bold text-[55px] z-[-1]'>
+                        <p class=' mb-0'>19</p>
+                        <p class=' mt-0'>FEB</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Partner -->
     <section>
-        <div class=" container  my-32 mx-auto  2xl:px-20 px-5">
+        <div class=" container my-32 mx-auto px-20">
             <div
-                class="md:flex items-center justify-between bg-gradient-to-r from-orange-500 to-tomato-300 rounded-2xl py-5">
-                <div class="xl:w-1/2 lg:w-5/12 w-full">
-                    <p class=" xl:text-[36px] text-xl text-white pl-[50px] pr-[20px] py-[50px]">Looking For Best Partner
+                class="flex items-center justify-between bg-gradient-to-r from-orange-500 to-tomato-300 rounded-2xl py-5">
+                <div class="w-full">
+                    <p class="text-xl text-white pl-[50px] pr-[20px] py-[50px]">Looking For Best Partner
                         <br />For Your Own Successful Business?
                     </p>
                 </div>
-                <div class="xl:w-1/2 lg:w-7/12 w-full flex items-center justify-between relative pl-14">
-                    <button class="group relative h-14 w-44 overflow-hidden rounded-lg bg-white text-lg shadow">
-                        <div
-                            class="absolute inset-0 w-0 bg-amber-400 transition-all duration-[250ms] ease-out group-hover:w-full">
-                        </div>
-                        <span class="relative text-black group-hover:text-white">Apply Now</span>
+                <div class="w-full flex items-center justify-between relative pl-14">
+                    <button
+                        class="h-14 w-44 overflow-hidden rounded-lg bg-gradient-to-r from-white to-black text-lg shadow">
+                        <span class="text-white">Apply Now</span>
                     </button>
-                    <div class=' absolute right-10 xl:-bottom-[96px] -bottom-[70px] hidden lg:block'>
-                        <img src="assets/person.png" alt="Picture of the author"
-                            class=' xl:w-[250px] w-[200px] xl:h-[320px]' />
+                    <div class=' absolute right-10 -bottom-[70px] hidden lg:block'>
+                        <img src="assets/person.png" alt="Picture of the author" class='w-[200px]' />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testmonial -->
+    <section>
+        <div class='container mx-auto flex gap-5 px-20'>
+            <div class=' h-full w-1/2'>
+                <h1 class="text-3xl text-orange-500 text-left pb-5">CLIENT <span class="text-black">TESTIMONIALS</span>
+                </h1>
+
+                <h1 class='text-3xl font-semibold text-black w-[85%] mb-6'>We Have Many Satisfied Clients Say About Us
+                </h1>
+
+                <div class='h-[380px] w-full border bg-white border-orange-300 my-20 relative rounded-3xl'>
+
+                    <img src="assets/reviewer.jpg" alt="Picture of the author"
+                        class=' w-[105px] h-[105px] rounded-full mx-auto -mt-[60px] ' />
+
+                    <div class=' text-center p-10'>
+                        <div class='flex justify-center mb-2'>
+                            <img class="h-[80px]" src="assets/rating.png" alt="ratings">
+                        </div>
+                        <p class=' text-[18px] text-gray-600 md:mb-16 mb-4'>Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Praesentium et voluptatum voluptatibus doloribus ipsum expedita ut unde a
+                            odio! Sunt consequatur repellendus nihil itaque soluta pariatur rem ipsum dolor excepturi?
+                        </p>
+                        <h1 class=' text-lg font-semibold'>Marie D</h1>
+                    </div>
+
+                    <img src="assets/left-quote.png" alt="Picture of the author"
+                        class=' w-[37px] h-[30px] absolute -bottom-3 left-[48%] ' />
+                </div>
+            </div>
+
+            <div class=' h-full w-1/2 '>
+                <h1 class="text-3xl text-orange-500 text-left pb-5">QUESTION <span class="text-black">ANSWER</span>
+                </h1>
+
+                <h1 class='text-lg font-semibold text-black w-[85%] mb-2'>Get some answers from
+                    frequently asked questions</h1>
+
+                <div class="accordion flex flex-col items-center justify-center md:mt-[100px] mt-10">
+                    <div class="w-full mb-3 ">
+                        <input type="checkbox" name="panel" id="panel-1" class="hidden" />
+                        <label for="panel-1"
+                            class="relative block bg-white border border-orange-300 rounded-lg cursor-pointer text-orange-500 px-6 py-7 shadow border-b border-grey">Is
+                            the product noisy in operation? Will it affect people's normal rest?</label>
+                        <div
+                            class="accordion__content overflow-hidden bg-white border border-gray-300 border-t-0 shadow-md rounded-lg ">
+                            <p class="accordion__body p-7" id="panel1">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ratione rerum error qui in exercitationem fugiat quod distinctio
+                                magnam omnis deserunt odio, unde perspiciatis quidem aperiam obcaecati ea quisquam
+                                similique tempore. A ab fuga accusamus qui.</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full mb-3 ">
+                        <input type="checkbox" name="panel" id="panel-2" class="hidden " />
+                        <label for="panel-2"
+                            class="relative block bg-white border border-orange-300 rounded-lg cursor-pointer text-orange-500 px-6 py-7 shadow border-b border-grey">What
+                            is the function of the ionizer?</label>
+                        <div
+                            class="accordion__content overflow-hidden  bg-white border border-gray-300 border-t-0 shadow-md rounded-lg ">
+                            <p class="accordion__body p-7" id="panel1">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Ab, odit illum. Quidem, repudiandae dolores quae voluptas, inventore
+                                cum sequi placeat accusantium omnis, neque ipsum quos!</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full mb-3 ">
+                        <input type="checkbox" name="panel" id="panel-3" class="hidden " />
+                        <label for="panel-3"
+                            class="relative block bg-white border border-orange-300 rounded-lg cursor-pointer text-orange-500 px-6 py-7 shadow border-b border-grey">How
+                            often do I need to change the filter? Is it durable?</label>
+                        <div
+                            class="accordion__content overflow-hidden  bg-white border border-gray-300 border-t-0 shadow-md rounded-lg ">
+                            <p class="accordion__body p-7" id="panel1">Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Necessitatibus dolor esse est minima ea magni quidem veritatis, cum
+                                eaque laudantium in architecto aut aliquid omnis libero, atque recusandae mollitia
+                                fugiat id quaerat corporis hic! Explicabo?</p>
+                        </div>
+                    </div>
+
+                    <div class="w-full mb-3 ">
+                        <input type="checkbox" name="panel" id="panel-4" class="hidden " />
+                        <label for="panel-4"
+                            class="relative block bg-white border border-orange-300 rounded-lg cursor-pointer  text-orange-500 px-6 py-7 shadow border-b border-grey">What
+                            is the maximum square footage that can be covered by this device?</label>
+                        <div
+                            class="accordion__content overflow-hidden  bg-white border border-gray-300 border-t-0 shadow-md rounded-lg ">
+                            <p class="accordion__body p-7" id="panel1">Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. At vel doloribus nihil aliquam fuga necessitatibus provident non
+                                exercitationem ipsam error, illo culpa eius suscipit eveniet laudantium saepe minus
+                                veniam alias? Aliquid ut enim cumque natus.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -243,26 +697,25 @@
     <section>
         <div class="bg-orange-500 py-6 ">
             <div class="container mx-auto px-5">
-                <div class="grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
-                    <div class="px-5 sm:px-0 sm:pl-4">
-                        <h3 class="uppercase text-white text-xl 2xl:text-2xl font-semibold tracking-tight mb-2">
+                <div class="grid place-items-center grid-cols-4">
+                    <div class="px-5">
+                        <h3 class="uppercase text-white text-2xl font-semibold tracking-tight mb-2">
                             SUBSCRIBE TO OUR NEWSLETTER!
                         </h3>
-                        <p class="text-white text-sm sm:text-base font-semibold">
+                        <p class="text-white text-base font-semibold">
                             We’re inspired by people like you to make technology better.
                         </p>
                     </div>
                     <div>
                         <input type="text" placeholder="Name"
-                            class="py-2 px-4 mt-6 md:mt-0 md:ml-14 2xl:ml-20 placeholder:text-lg placeholder:text-black w-[300px] sm:w-[450px] md:w-[300px] lg:w-[240px] xl:w-[300px] 2xl:w-[350px] focus:outline-none" />
+                            class="py-2 px-4 mt-6 ml-20 w-[350px] focus:outline-none" />
                     </div>
                     <div>
                         <input type="email" placeholder="Email"
-                            class="mt-5 md:mr-20 lg:mr-0 lg:mt-0 lg:ml-16 xl:ml-24 2xl:ml-32 placeholder:text-lg placeholder:text-black py-2 px-4 w-[300px] sm:w-[450px] md:w-[300px] lg:w-[240px] xl:w-[300px] 2xl:w-[350px] focus:outline-none" />
+                            class="py-2 px-4 mt-6 ml-20 w-[350px] focus:outline-none" />
                     </div>
                     <div>
-                        <input type="submit" value="Submit"
-                            class="mt-5 lg:mt-0 text-white bg-slate-900 py-2 px-8 md:py-3 md:px-12 text-lg md:text-xl font-semibold hover:bg-black" />
+                        <input type="submit" value="Submit" class="mt-5 text-white bg-black py-2 px-12 text-xl" />
                     </div>
                 </div>
             </div>
